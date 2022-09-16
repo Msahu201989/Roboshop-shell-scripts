@@ -13,7 +13,7 @@ rm -rf *
 echo Extracting Web Content
 unzip /tmp/frontend.zip &>>/tmp/frontrnd
 
-mv frontend-main/static/* .
+mv frontend-main/static/* . &>>/tmp/frontrnd
 mv frontend-main/localhost.conf /etc/nginx/default.d/roboshop.conf &>>/tmp/frontrnd
 
 echo Starting Nginx service
