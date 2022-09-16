@@ -1,5 +1,5 @@
 echo Installing Nginx
-yum install nginx -y &>>/tmp/frontrnd
+yum install nginxx -y &>>/tmp/frontrnd
 echo status = $?
 
 echo Downloading Nginx Web Content
