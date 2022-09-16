@@ -1,8 +1,6 @@
 LOG_FILE=/tmp/catalogue
 
-ID=$(id -u)
-if [ $ID -ne 0 ]; then
-echo You Should Run this Script with Sudo Priviledges
+
 
 
 echo "Setup Nodejs Repo"
