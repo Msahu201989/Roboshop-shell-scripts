@@ -23,7 +23,7 @@ if [ $? -eq 0 ]; then
    fi
 
 id roboshop &>>${LOG_FILE}
-fi[ $? -ne 0 ] then
+
 echo "Creating user Roboshop"
 useradd roboshop &>>${LOG_FILE}
    if [ $? -eq 0 ]; then
@@ -31,8 +31,7 @@ useradd roboshop &>>${LOG_FILE}
   else
    echo Status = Failure
 
-   fi
-fi
+
 
 echo "Downloding Catalogue Application code"
 curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip" &>>${LOG_FILE}
@@ -44,6 +43,9 @@ if [ $? -eq 0 ]; then
    fi
 
 cd /home/roboshop
+
+echo "Cleasn Old App Content"
+rm -rf catalogue &>>${LOG_FILE}
 
 echo "Extracting Catalogue Application code"
 unzip /tmp/catalogue.zip &>>${LOG_FILE}
