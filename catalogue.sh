@@ -30,7 +30,7 @@ useradd roboshop &>>${LOG_FILE}
   echo Status = Success
   else
    echo Status = Failure
-   exit 1
+
    fi
 fi
 
