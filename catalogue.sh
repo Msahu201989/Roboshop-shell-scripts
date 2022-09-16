@@ -19,16 +19,16 @@ echo status = $?
 cd /home/roboshop
 
 echo "Extracting Catalogue Application code"
-$ unzip /tmp/catalogue.zip &>>${LOG_FILE}
+unzip /tmp/catalogue.zip &>>${LOG_FILE}
 echo status = $?
 
 echo "Moving Files to Catalogue"
-$ mv catalogue-main catalogue
-$ cd /home/roboshop/catalogue
+mv catalogue-main catalogue
+cd /home/roboshop/catalogue
 echo status = $?
 
 echo "Installing NodeJs Dependencies"
-$ npm install &>>${LOG_FILE}
+npm install &>>${LOG_FILE}
 echo status = $?
 
 echo "Setup Catalogue service"
