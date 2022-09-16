@@ -1,5 +1,10 @@
 LOG_FILE=/tmp/catalogue
 
+ID=$(id -u)
+if [ $id -ne 0 ]; then
+echo You Should Run this Script with Sudo Priviledges
+
+
 echo "Setup Nodejs Repo"
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash &>>${LOG_FILE}
 if [ $? -eq 0 ]; then
