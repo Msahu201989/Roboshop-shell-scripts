@@ -6,6 +6,7 @@ if [ $? -eq 0 ]; then
   echo Status = Success
   else
    echo Status = Failure
+   exit
    fi
 echo status = $?
 
@@ -15,6 +16,7 @@ if [ $? -eq 0 ]; then
   echo Status = Success
   else
    echo Status = Failure
+   exit
    fi
 
 echo "Creating user Roboshop"
@@ -23,6 +25,7 @@ if [ $? -eq 0 ]; then
   echo Status = Success
   else
    echo Status = Failure
+   exit
    fi
 
 echo "Downloding Catalogue Application code"
@@ -31,6 +34,7 @@ if [ $? -eq 0 ]; then
   echo Status = Success
   else
    echo Status = Failure
+   exit
    fi
 
 cd /home/roboshop
@@ -41,6 +45,7 @@ if [ $? -eq 0 ]; then
   echo Status = Success
   else
    echo Status = Failure
+   exit
    fi
 
 echo "Moving Files to Catalogue"
@@ -50,6 +55,7 @@ if [ $? -eq 0 ]; then
   echo Status = Success
   else
    echo Status = Failure
+   exit
    fi
 
 echo "Installing NodeJs Dependencies"
@@ -58,6 +64,7 @@ if [ $? -eq 0 ]; then
   echo Status = Success
   else
    echo Status = Failure
+   exit
    fi
 
 echo "Setup Catalogue service"
@@ -66,6 +73,7 @@ if [ $? -eq 0 ]; then
   echo Status = Success
   else
    echo Status = Failure
+   exit
    fi
 
 systemctl daemon-reload &>>${LOG_FILE}
@@ -77,4 +85,5 @@ if [ $? -eq 0 ]; then
   echo Status = Success
   else
    echo Status = Failure
+   exit
    fi
