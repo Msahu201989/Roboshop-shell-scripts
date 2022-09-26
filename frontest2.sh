@@ -1,4 +1,4 @@
-#!
+
 
 set-hostname Frontend
 yum list all | grep nginx
