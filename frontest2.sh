@@ -1,7 +1,8 @@
+LOG_FILE = tmp/frontend
 echo Nginx installation in progress ......
-yum list all | grep nginx &>>/tmp/frontend
+yum list all | grep nginx &>>LOG_FILE
 echo status = $?
-yum install nginx -y &>>/tmp/frontend
+yum install nginx -y &>>LOG_FILE
 echo status = $?
 echo installation going on
 systemctl enable nginx
