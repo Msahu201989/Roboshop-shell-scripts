@@ -13,3 +13,4 @@ echo starting nginx
 echo status = $?
 
 echo installation completed
+
