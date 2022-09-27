@@ -21,5 +21,3 @@ cd /home/roboshop/catalogue
 echo installing depedndencies
 npm install &>>LOG_FILE
 echo installation completed
-
-
