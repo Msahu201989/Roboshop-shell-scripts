@@ -11,6 +11,5 @@ echo status = $?
 systemctl start nginx
 echo starting nginx
 echo status = $?
-
 echo installation completed
 
