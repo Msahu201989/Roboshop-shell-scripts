@@ -1,8 +1,4 @@
 LOG_FILE=/tmp/catalogue
-
-
-
-
 echo "Setup Nodejs Repo"
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash &>>${LOG_FILE}
 if [ $? -eq 0 ]; then
