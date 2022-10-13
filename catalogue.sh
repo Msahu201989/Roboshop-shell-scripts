@@ -72,7 +72,7 @@ if [ $? -eq 0 ]; then
    fi
 
 echo "Setup Catalogue service"
-mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service
+mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/payment.service
 if [ $? -eq 0 ]; then
   echo Status = Success
   else
